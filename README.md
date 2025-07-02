@@ -123465,7 +123465,7 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=blue&lines=USE+YOUR+NUMBER)](https://git.io/typing-svg)
 
- <a href="https://for-buddy.onrender.com/pair"><img title="PAIR-CODES" src="https://img.shields.io/badge/PAIR-CODES-h?color=black&style=for-the-badge&logo=apple" width="297" height="40.45"/></a></p>
+ <a href="https://for-buddy.onrender.com/"><img title="PAIR-CODES" src="https://img.shields.io/badge/PAIR-CODES-h?color=black&style=for-the-badge&logo=apple" width="297" height="40.45"/></a></p>
 
 
 ## ALL IN GENERAL

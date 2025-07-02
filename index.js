@@ -1067749,4 +1067749,788 @@
 
 
 
-const _0x1b46ff=_0x2d83;(function(_0x2ef8fd,_0x36999b){const _0x5818e4=_0x2d83,_0x4261a2=_0x2ef8fd();while(!![]){try{const _0x377032=parseInt(_0x5818e4(0xbe))/0x1+parseInt(_0x5818e4(0xec))/0x2*(parseInt(_0x5818e4(0xad))/0x3)+-parseInt(_0x5818e4(0xf6))/0x4+parseInt(_0x5818e4(0xed))/0x5+-parseInt(_0x5818e4(0xd0))/0x6+parseInt(_0x5818e4(0xef))/0x7*(parseInt(_0x5818e4(0xd6))/0x8)+-parseInt(_0x5818e4(0xda))/0x9*(parseInt(_0x5818e4(0xfd))/0xa);if(_0x377032===_0x36999b)break;else _0x4261a2['push'](_0x4261a2['shift']());}catch(_0x4ef671){_0x4261a2['push'](_0x4261a2['shift']());}}}(_0x4b66,0xb8956));import _0x3a17d3 from'dotenv';_0x3a17d3[_0x1b46ff(0xf7)]();import{makeWASocket,Browsers,fetchLatestBaileysVersion,DisconnectReason,useMultiFileAuthState,getContentType}from'@whiskeysockets/baileys';import{Handler,Callupdate,GroupUpdate}from'./src/event/index.js';import _0x389d38 from'express';import _0x2f8874 from'pino';import _0x2b3bec from'fs';import{File}from'megajs';import _0x437e38 from'node-cache';function _0x4b66(){const _0x178c82=['toJSON','sendMessage','MODE','fromMe','PORT','creds.json','Auto-reacted\x20to\x20a\x20status\x20with:\x20','trace','237902dZIJUA','blue','https://files.catbox.moe/ld53qr.jpg','AUTO_STATUS_REACT','silent','3.3','Error\x20during\x20auto\x20reaction:','status@broadcast','includes','key','connection.update','exit','loadMessage','Invalid\x20SESSION_ID\x20format!\x20It\x20must\x20contain\x20both\x20file\x20ID\x20and\x20decryption\x20key.','Please\x20add\x20your\x20session\x20to\x20SESSION_ID\x20env\x20!!','output','env','statusCode','243276mVHWCH','PREFIX','Server\x20is\x20running\x20on\x20port\x20','🔒\x20Session\x20file\x20found,\x20proceeding\x20without\x20QR\x20code.','♻️\x20Connection\x20reestablished\x20after\x20restart.','hex','152veVJPV','remoteJid','AUTO_REACT','level','27gCMEul','🤖\x20Failed\x20to\x20download\x20session\x20data:','close','existsSync','mkdirSync','writeFile','🇵🇰','listen','join','error','floor','send','Buddy\x20is\x20now\x20connected','get','🤳\x20Session\x20Successfully\x20Loaded\x20!!','private','using\x20WA\x20v','🔄\x20Syncing\x20Session...','36JCRVrc','938510TSXext','creds.update','104153IgJGGu','No\x20session\x20found\x20or\x20downloaded,\x20QR\x20code\x20will\x20be\x20printed\x20for\x20authentication.','call','session',',\x20isLatest:\x20','SESSION_ID','log','3843304LNneHf','config','Buddy','public','ephemeralMessage','#32CD32','messages.upsert','831150WQaUOh','🔒\x20Session\x20downloaded,\x20starting\x20bot.','length','download','bold','messages','Debugging\x20SESSION_ID:','split',',\x22time\x22:\x22','user','loggedOut','216411jTvUXK','true','Buddy;;;','message','\x0a╭──────────━⊷\x20⁠⁠⁠⁠\x0a║\x20𝕭𝖀𝕯𝕯𝖄-𝖃𝕿𝕽\x0a╰──────────━⊷\x0a╭──────────━⊷\x0a║\x20𝕯𝖊𝖛𝖊𝖑𝖔𝖕𝖊𝖗;\x20𝕮𝖆𝖗𝖑𝖙𝖊𝖈𝖍\x0a║\x20𝕷𝖎𝖇𝖗𝖆𝖗𝖞;\x20𝕭𝖆𝖎𝖑𝖊𝖞𝖘\x0a║\x20𝖎𝖌𝖓𝖎𝖙𝖎𝖔𝖓:\x20*','random','Auto\x20Like\x20Status\x20Error:','child','safari'];_0x4b66=function(){return _0x178c82;};return _0x4b66();}import _0x1c0541 from'path';import _0x23f57b from'chalk';import _0x1f8a85 from'moment-timezone';import _0x4a061c from'axios';import _0x541a98 from'./config.cjs';function _0x2d83(_0x7098f4,_0x57c2c0){const _0x4b6642=_0x4b66();return _0x2d83=function(_0x2d8386,_0x52a1bf){_0x2d8386=_0x2d8386-0xa9;let _0x20f2ef=_0x4b6642[_0x2d8386];return _0x20f2ef;},_0x2d83(_0x7098f4,_0x57c2c0);}import _0x231063 from'./lib/autoreact.cjs';const {emojis,doReact}=_0x231063,prefix=process[_0x1b46ff(0xce)][_0x1b46ff(0xd1)]||_0x541a98['PREFIX'],sessionName=_0x1b46ff(0xf2),app=_0x389d38(),orange=_0x23f57b[_0x1b46ff(0x101)][_0x1b46ff(0xd5)]('#FFA500'),lime=_0x23f57b[_0x1b46ff(0x101)][_0x1b46ff(0xd5)](_0x1b46ff(0xfb));let useQR=![],initialConnection=!![];const PORT=process['env'][_0x1b46ff(0xba)]||0xbb8,MAIN_LOGGER=_0x2f8874({'timestamp':()=>_0x1b46ff(0xaa)+new Date()[_0x1b46ff(0xb6)]()+'\x22'}),logger=MAIN_LOGGER[_0x1b46ff(0xb4)]({});logger[_0x1b46ff(0xd9)]=_0x1b46ff(0xbd);const msgRetryCounterCache=new _0x437e38(),__filename=new URL(import.meta['url'])['pathname'],__dirname=_0x1c0541['dirname'](__filename),sessionDir=_0x1c0541[_0x1b46ff(0xe2)](__dirname,_0x1b46ff(0xf2)),credsPath=_0x1c0541[_0x1b46ff(0xe2)](sessionDir,_0x1b46ff(0xbb));!_0x2b3bec[_0x1b46ff(0xdd)](sessionDir)&&_0x2b3bec[_0x1b46ff(0xde)](sessionDir,{'recursive':!![]});async function downloadSessionData(){const _0x24040e=_0x1b46ff;console[_0x24040e(0xf5)](_0x24040e(0x103),_0x541a98[_0x24040e(0xf4)]);if(!_0x541a98[_0x24040e(0xf4)])return console[_0x24040e(0xe3)](_0x24040e(0xcc)),![];const _0x43975e=_0x541a98['SESSION_ID'][_0x24040e(0xa9)](_0x24040e(0xaf))[0x1];if(!_0x43975e||!_0x43975e[_0x24040e(0xc6)]('#'))return console[_0x24040e(0xe3)](_0x24040e(0xcb)),![];const [_0x2107d5,_0x134a4b]=_0x43975e['split']('#');try{console[_0x24040e(0xf5)](_0x24040e(0xeb));const _0x277551=File['fromURL']('https://mega.nz/file/'+_0x2107d5+'#'+_0x134a4b),_0x1bb6a7=await new Promise((_0x11214b,_0x1a8dfa)=>{const _0x22a639=_0x24040e;_0x277551[_0x22a639(0x100)]((_0x63b4ad,_0x558d65)=>{if(_0x63b4ad)_0x1a8dfa(_0x63b4ad);else _0x11214b(_0x558d65);});});return await _0x2b3bec['promises'][_0x24040e(0xdf)](credsPath,_0x1bb6a7),console[_0x24040e(0xf5)](_0x24040e(0xe8)),!![];}catch(_0x51268f){return console[_0x24040e(0xe3)](_0x24040e(0xdb),_0x51268f),![];}}async function start(){const _0x45fbd7=_0x1b46ff;try{const {state:_0x452052,saveCreds:_0x5a5861}=await useMultiFileAuthState(sessionDir),{version:_0xff97a,isLatest:_0x33f09e}=await fetchLatestBaileysVersion();console[_0x45fbd7(0xf5)](_0x45fbd7(0xea)+_0xff97a[_0x45fbd7(0xe2)]('.')+_0x45fbd7(0xf3)+_0x33f09e);const _0x28a0d4=makeWASocket({'version':_0xff97a,'logger':_0x2f8874({'level':_0x45fbd7(0xc2)}),'printQRInTerminal':useQR,'browser':[_0x45fbd7(0xf8),_0x45fbd7(0xb5),_0x45fbd7(0xc3)],'auth':_0x452052,'getMessage':async _0xc98c3f=>{const _0x4c526c=_0x45fbd7;if(store){const _0x51ed29=await store[_0x4c526c(0xca)](_0xc98c3f['remoteJid'],_0xc98c3f['id']);return _0x51ed29[_0x4c526c(0xb0)]||undefined;}return{'conversation':'whatsapp\x20user\x20bot'};}});_0x28a0d4['ev']['on'](_0x45fbd7(0xc8),_0xdb1d7a=>{const _0x17d5b8=_0x45fbd7,{connection:_0x3ca2d7,lastDisconnect:_0x12ba79}=_0xdb1d7a;if(_0x3ca2d7===_0x17d5b8(0xdc))_0x12ba79[_0x17d5b8(0xe3)]?.[_0x17d5b8(0xcd)]?.[_0x17d5b8(0xcf)]!==DisconnectReason[_0x17d5b8(0xac)]&&start();else _0x3ca2d7==='open'&&(initialConnection?(console['log'](_0x23f57b['green'](_0x17d5b8(0xe6))),_0x28a0d4['sendMessage'](_0x28a0d4[_0x17d5b8(0xab)]['id'],{'image':{'url':_0x17d5b8(0xc0)},'caption':_0x17d5b8(0xb1)+prefix+'*\x0a╰──────────━⊷\x0ahttps://tinyurl.com/yx2b6u3n\x0a'}),initialConnection=![]):console['log'](_0x23f57b[_0x17d5b8(0xbf)](_0x17d5b8(0xd4))));}),_0x28a0d4['ev']['on'](_0x45fbd7(0xee),_0x5a5861),_0x28a0d4['ev']['on'](_0x45fbd7(0xfc),async _0x195839=>await Handler(_0x195839,_0x28a0d4,logger)),_0x28a0d4['ev']['on'](_0x45fbd7(0xf1),async _0x3e36de=>await Callupdate(_0x3e36de,_0x28a0d4)),_0x28a0d4['ev']['on']('group-participants.update',async _0x567002=>await GroupUpdate(_0x28a0d4,_0x567002));if(_0x541a98['MODE']===_0x45fbd7(0xf9))_0x28a0d4[_0x45fbd7(0xf9)]=!![];else _0x541a98[_0x45fbd7(0xb8)]===_0x45fbd7(0xe9)&&(_0x28a0d4['public']=![]);_0x28a0d4['ev']['on']('messages.upsert',async _0x226e55=>{const _0x128957=_0x45fbd7;try{const _0x14e720=_0x226e55[_0x128957(0x102)][0x0];if(!_0x14e720[_0x128957(0xc7)][_0x128957(0xb9)]&&_0x541a98[_0x128957(0xd8)]){if(_0x14e720[_0x128957(0xb0)]){const _0x1220ff=emojis[Math[_0x128957(0xe4)](Math[_0x128957(0xb2)]()*emojis[_0x128957(0xff)])];await doReact(_0x1220ff,_0x14e720,_0x28a0d4);}}}catch(_0x5338e6){console[_0x128957(0xe3)](_0x128957(0xc4),_0x5338e6);}}),_0x28a0d4['ev']['on'](_0x45fbd7(0xfc),async _0x36d2b0=>{const _0x4652cc=_0x45fbd7;try{const _0x4971c8=_0x36d2b0[_0x4652cc(0x102)][0x0];if(!_0x4971c8||!_0x4971c8[_0x4652cc(0xb0)])return;const _0x433745=getContentType(_0x4971c8['message']);_0x4971c8[_0x4652cc(0xb0)]=_0x433745===_0x4652cc(0xfa)?_0x4971c8[_0x4652cc(0xb0)][_0x4652cc(0xfa)][_0x4652cc(0xb0)]:_0x4971c8[_0x4652cc(0xb0)];if(_0x4971c8[_0x4652cc(0xc7)][_0x4652cc(0xd7)]===_0x4652cc(0xc5)&&_0x541a98[_0x4652cc(0xc1)]===_0x4652cc(0xae)){const _0x3734c8=await _0x28a0d4['decodeJid'](_0x28a0d4[_0x4652cc(0xab)]['id']),_0xa685cb=['🦖','💸','💨','🦮','🐕‍🦺','💯','🔥','💫','💎','⚡','🤍','🖤','👀','🙌','🙆','🚩','💻','🤖','😎','🤎','✅','🫀','🧡','😁','😄','🔔','👌','💥','⛅','🌟','🗿',_0x4652cc(0xe0),'💜','💙','🌝','💚'],_0xeb1fdf=_0xa685cb[Math[_0x4652cc(0xe4)](Math['random']()*_0xa685cb[_0x4652cc(0xff)])];await _0x28a0d4[_0x4652cc(0xb7)](_0x4971c8[_0x4652cc(0xc7)][_0x4652cc(0xd7)],{'react':{'text':_0xeb1fdf,'key':_0x4971c8[_0x4652cc(0xc7)]}},{'statusJidList':[_0x4971c8['key']['participant'],_0x3734c8]}),console['log'](_0x4652cc(0xbc)+_0xeb1fdf);}}catch(_0x2d33f7){console[_0x4652cc(0xe3)](_0x4652cc(0xb3),_0x2d33f7);}});}catch(_0x47ef5a){console[_0x45fbd7(0xe3)]('Critical\x20Error:',_0x47ef5a),process[_0x45fbd7(0xc9)](0x1);}}async function init(){const _0x91a96e=_0x1b46ff;if(_0x2b3bec[_0x91a96e(0xdd)](credsPath))console[_0x91a96e(0xf5)](_0x91a96e(0xd3)),await start();else{const _0x367579=await downloadSessionData();_0x367579?(console[_0x91a96e(0xf5)](_0x91a96e(0xfe)),await start()):(console[_0x91a96e(0xf5)](_0x91a96e(0xf0)),useQR=!![],await start());}}init(),app[_0x1b46ff(0xe7)]('/',(_0x306948,_0x5bd280)=>{const _0x443d77=_0x1b46ff;_0x5bd280[_0x443d77(0xe5)]('CONNECTED\x20SUCCESSFULLY\x20✅');}),app[_0x1b46ff(0xe1)](PORT,()=>{const _0x163065=_0x1b46ff;console[_0x163065(0xf5)](_0x163065(0xd2)+PORT);});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import dotenv from 'dotenv';
+dotenv.config();
+
+import baileys from '@whiskeysockets/baileys';
+const {
+    makeWASocket,
+    Browsers,
+    fetchLatestBaileysVersion,
+    DisconnectReason,
+    useMultiFileAuthState,
+    getContentType,
+    downloadContentFromMessage
+} = baileys;
+
+import { Handler, Callupdate, GroupUpdate } from './src/event/index.js';
+import express from 'express';
+import pino from 'pino';
+import fs from 'fs';
+import { File } from 'megajs';
+import NodeCache from 'node-cache';
+import path from 'path';
+import chalk from 'chalk';
+import moment from 'moment-timezone';
+import axios from 'axios';
+import config from './config.cjs';
+import pkg from './lib/autoreact.cjs';
+import zlib from 'zlib';
+
+const { emojis, doReact } = pkg;
+const prefix = process.env.PREFIX || config.PREFIX;
+const sessionName = "session";
+const app = express();
+const orange = chalk.bold.hex("#FFA500");
+const lime = chalk.bold.hex("#32CD32");
+let useQR = false;
+let initialConnection = true;
+const PORT = process.env.PORT || 3000;
+
+const MAIN_LOGGER = pino({
+    timestamp: () => `,"time":"${moment().tz("Africa/Nairobi").toJSON()}"`
+});
+const logger = MAIN_LOGGER.child({});
+logger.level = "trace";
+
+const msgRetryCounterCache = new NodeCache();
+
+const __filename = new URL(import.meta.url).pathname;
+const __dirname = path.dirname(__filename);
+
+const sessionDir = path.join(__dirname, 'session');
+const credsPath = path.join(sessionDir, 'creds.json');
+
+// Ensure session directory exists
+if (!fs.existsSync(sessionDir)) {
+    fs.mkdirSync(sessionDir, { recursive: true });
+}
+
+// --- Persistent Message Store for Anti-Delete ---
+const storeFilePath = path.join(__dirname, 'messages-backup.json');
+const store = {
+    chats: {},
+    addMessage: function(message) {
+        const remoteJid = message.key.remoteJid;
+        if (!this.chats[remoteJid]) {
+            this.chats[remoteJid] = [];
+        }
+        // Prevent duplicates
+        if (!this.chats[remoteJid].some(m => m.key.id === message.key.id)) {
+            this.chats[remoteJid].push(message);
+            this.save();
+        }
+    },
+    getMessage: function(remoteJid, messageId) {
+        if (!this.chats[remoteJid]) return null;
+        return this.chats[remoteJid].find(m => m.key.id === messageId);
+    },
+    removeMessage: function(remoteJid, messageId) {
+        if (!this.chats[remoteJid]) return false;
+        this.chats[remoteJid] = this.chats[remoteJid].filter(m => m.key.id !== messageId);
+        this.save();
+        return true;
+    },
+    load: function() {
+        if (fs.existsSync(storeFilePath)) {
+            try {
+                this.chats = JSON.parse(fs.readFileSync(storeFilePath));
+            } catch (_) { this.chats = {}; }
+        }
+    },
+    save: function() {
+        try {
+            fs.writeFileSync(storeFilePath, JSON.stringify(this.chats, null, 2));
+        } catch (_) {}
+    }
+};
+store.load();
+
+// Helper function to create notification message
+function createNotification(deletedMessage) {
+    const sender = deletedMessage.key.participant || deletedMessage.key.remoteJid;
+    const chatType = deletedMessage.key.remoteJid.endsWith('@g.us') ? 'Group' : 'Private Chat';
+    const chatName = chatType === 'Group' ? deletedMessage.key.remoteJid : 'Private Chat';
+    return `⚠️ *DELETED MESSAGE DETECTED* ⚠️\n\n`
+        + `*Chat Type:* ${chatType}\n`
+        + `*Chat:* ${chatName}\n`
+        + `*Sender:* @${sender.split('@')[0]}\n`
+        + `*Time:* ${moment().tz("Africa/Nairobi").format('YYYY-MM-DD HH:mm:ss')}\n\n`;
+}
+
+// Enhanced media downloader with better error handling
+async function downloadMedia(Matrix, message) {
+    try {
+        const mtype = Object.keys(message)[0];
+        const mediaObj = message[mtype];
+        if (!mediaObj || !mediaObj.mediaKey) {
+            return null;
+        }
+        let mediaType;
+        switch (mtype) {
+            case 'imageMessage':
+                mediaType = 'image'; break;
+            case 'videoMessage':
+                mediaType = 'video'; break;
+            case 'audioMessage':
+                mediaType = 'audio'; break;
+            case 'documentMessage':
+                mediaType = 'document'; break;
+            case 'stickerMessage':
+                mediaType = 'sticker'; break;
+            case 'voiceMessage':
+                mediaType = 'voice'; break;
+            default:
+                return null;
+        }
+        const stream = await downloadContentFromMessage(mediaObj, mediaType);
+        const bufferArray = [];
+        for await (const chunk of stream) bufferArray.push(chunk);
+        return Buffer.concat(bufferArray);
+    } catch (error) {
+        console.error('Error downloading media:', error);
+        return null;
+    }
+}
+
+async function authentification() {
+    try {
+        if (!fs.existsSync(credsPath)) {
+            console.log("Session connected...");
+            // Split the session string into header and Base64 data
+            const [header, b64data] = config.SESSION_ID.split(';;;'); 
+
+            // Validate the session format
+            if (header === "Buddy" && b64data) {
+                let compressedData = Buffer.from(b64data.replace('...', ''), 'base64'); // Decode and truncate
+                let decompressedData = zlib.gunzipSync(compressedData); // Decompress session
+                fs.writeFileSync(credsPath, decompressedData, "utf8"); // Save to file
+            } else {
+                throw new Error("Invalid session format");
+            }
+        } else if (fs.existsSync(credsPath) && config.SESSION_ID !== "zokk") {
+            console.log("Updating existing session...");
+            const [header, b64data] = config.SESSION_ID.split(';;;'); 
+
+            if (header === "Buddy" && b64data) {
+                let compressedData = Buffer.from(b64data.replace('...', ''), 'base64');
+                let decompressedData = zlib.gunzipSync(compressedData);
+                fs.writeFileSync(credsPath, decompressedData, "utf8");
+            } else {
+                throw new Error("Invalid session format");
+            }
+        }
+    } catch (e) {
+        console.log("Session Invalid: " + e.message);
+        return false;
+    }
+    return true;
+}
+
+async function start() {
+    try {
+        const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
+        const { version, isLatest } = await fetchLatestBaileysVersion();
+        console.log(`using WA v${version.join('.')}, isLatest: ${isLatest}`);
+
+        const Matrix = makeWASocket({
+            version,
+            logger: pino({ level: 'silent' }),
+            printQRInTerminal: useQR,
+            browser: ["Buddy", "safari", "3.3"],
+            auth: state,
+            getMessage: async (key) => {
+                if (store) {
+                    const msg = store.chats[key.remoteJid]?.find(m => m.key.id === key.id);
+                    return msg?.message || undefined;
+                }
+                return { conversation: "whatsapp user bot" };
+            },
+            msgRetryCounterCache
+        });
+
+        Matrix.ev.on('connection.update', (update) => {
+            const { connection, lastDisconnect } = update;
+            if (connection === 'close') {
+                if (lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut) {
+                    start();
+                }
+            } else if (connection === 'open') {
+                if (initialConnection) {
+                    console.log(chalk.green("Buddy-XTR is now connected"));
+                    Matrix.sendMessage(Matrix.user.id, {
+                        image: { url: "https://files.catbox.moe/bxnzi0.jpg" },
+                        caption: `
+╭───────────⊷ ​
+│ Buddy-XTR
+╰───────────⊷
+╭───────────⊷
+│ 𝕳𝖆𝖛𝖊 �𝖚𝖓; 𝕲𝖊𝖙 𝖘𝖚𝖕𝖕𝖔𝖗𝖙
+│ 𝕵𝖔𝖎𝖓; 𝕱𝖊𝖊𝖉𝖇𝖆𝖈𝖐
+│ 𝖈𝖔𝖒𝖒𝖆𝖓𝖉: ${prefix}
+╰───────────⊷
+*(follow us)*
+https://shorturl.at/pWIkL
+                        `
+                    });
+                    initialConnection = false;
+                } else {
+                    console.log(chalk.blue("♻ Connection reestablished after restart."));
+                }
+            }
+        });
+
+        Matrix.ev.on('creds.update', saveCreds);
+
+        // Attach main handler and group/call updates
+        Matrix.ev.on("messages.upsert", async chatUpdate => await Handler(chatUpdate, Matrix, logger));
+        Matrix.ev.on("call", async (json) => await Callupdate(json, Matrix));
+        Matrix.ev.on("group-participants.update", async (messag) => await GroupUpdate(Matrix, messag));
+
+        if (config.MODE === "public") {
+            Matrix.public = true;
+        } else if (config.MODE === "private") {
+            Matrix.public = false;
+        }
+
+        // --- Enhanced Auto Reaction to chats ---
+        Matrix.ev.on('messages.upsert', async (chatUpdate) => {
+            try {
+                if (!(config.AUTO_REACT === true || config.AUTO_REACT === "true")) return;
+                const messages = chatUpdate.messages;
+                if (!messages || messages.length === 0) return;
+                const mek = messages[0];
+                if (mek.key?.fromMe) return;
+                if (mek.message) {
+                    const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+                    await doReact(randomEmoji, mek, Matrix);
+                }
+            } catch (err) {
+                console.error('Error during auto reaction:', err);
+            }
+        });
+
+        // --- Enhanced Auto Like Status (Status Reaction) ---
+        Matrix.ev.on('messages.upsert', async (chatUpdate) => {
+            try {
+                // Debug log
+                console.log('Received message upsert event');
+                
+                if (!(config.AUTO_STATUS_REACT === true || config.AUTO_STATUS_REACT === "true")) {
+                    console.log('Auto reaction disabled in config');
+                    return;
+                }
+                
+                const messages = chatUpdate.messages;
+                if (!messages || messages.length === 0) {
+                    console.log('No messages in update');
+                    return;
+                }
+                
+                const mek = messages[0];
+                if (!mek.message) {
+                    console.log('Message content missing');
+                    return;
+                }
+                
+                console.log('Processing message from:', mek.key.remoteJid);
+                
+                const contentType = getContentType(mek.message);
+                const message = (contentType === 'ephemeralMessage') 
+                    ? mek.message.ephemeralMessage.message 
+                    : mek.message;
+                
+                // Enhanced status check
+                if (mek.key.remoteJid === 'status@broadcast' && !mek.key.fromMe) {
+                    console.log('Detected status update to react to');
+                    
+                    const emojiList = [
+                        '🦖', '💸', '💨', '🫮', '🐕‍🦺', '💯', '🔥', '💫', '💎', '⚡', '🩵', '🖤',
+                        '👀', '🙌', '🙆', '🚩', '💻', '🤖', '😎', '🌰', '🍕', '🥤', '🍔', '🍟'
+                    ];
+                    const randomEmoji = emojiList[Math.floor(Math.random() * emojiList.length)];
+                    
+                    console.log(`Attempting to react with: ${randomEmoji}`);
+                    
+                    try {
+                        const reaction = {
+                            react: {
+                                text: randomEmoji,
+                                key: mek.key,
+                            }
+                        };
+                        
+                        console.log('Sending reaction payload:', reaction);
+                        
+                        // Add delay to ensure status is fully loaded
+                        await new Promise(resolve => setTimeout(resolve, 1000));
+                        
+                        // Send reaction with additional options
+                        await Matrix.sendMessage(mek.key.remoteJid, reaction, {
+                            messageId: mek.key.id,
+                            participant: mek.key.participant || undefined
+                        });
+                        
+                        console.log(`Successfully reacted to status with: ${randomEmoji}`);
+                        
+                        // Additional verification
+                        setTimeout(async () => {
+                            try {
+                                const checkReaction = await Matrix.fetchMessages(mek.key.remoteJid, {
+                                    limit: 1,
+                                    before: mek.key.id
+                                });
+                                console.log('Reaction verification:', checkReaction);
+                            } catch (verifyErr) {
+                                console.error('Verification failed:', verifyErr);
+                            }
+                        }, 2000);
+                        
+                    } catch (reactErr) {
+                        console.error('Reaction failed:', reactErr);
+                        console.error('Reaction error details:', {
+                            remoteJid: mek.key.remoteJid,
+                            messageId: mek.key.id,
+                            participant: mek.key.participant
+                        });
+                        
+                        // Retry once after failure
+                        try {
+                            await new Promise(resolve => setTimeout(resolve, 1500));
+                            await Matrix.sendMessage(mek.key.remoteJid, reaction);
+                            console.log('Retry succeeded after initial failure');
+                        } catch (retryErr) {
+                            console.error('Retry also failed:', retryErr);
+                        }
+                    }
+                } else {
+                    console.log('Not a status update or is our own message');
+                }
+            } catch (err) {
+                console.error("Auto Like Status Error:", err);
+                console.error('Error context:', {
+                    message: messages?.[0]?.key,
+                    errorStack: err.stack
+                });
+            }
+        });
+
+        // --- START ANTI-DELETE HANDLER ---
+        Matrix.ev.on("messages.upsert", async (m) => {
+            if (!(config.ANTI_DELETE === true || config.ANTI_DELETE === "true")) return;
+            const { messages } = m;
+            const ms = messages[0];
+            if (!ms.message) return;
+
+            const messageKey = ms.key;
+            const remoteJid = messageKey.remoteJid;
+            if (remoteJid === "status@broadcast") return;
+
+            // Save the received message to storage
+            store.addMessage(ms);
+
+            // Handle deleted messages
+            if (ms.message.protocolMessage && ms.message.protocolMessage.type === 0) {
+                const deletedKey = ms.message.protocolMessage.key;
+                const chatMessages = store.chats[remoteJid];
+                const deletedMessage = chatMessages?.find(
+                    (msg) => msg.key.id === deletedKey.id
+                );
+                if (deletedMessage) {
+                    try {
+                        const participant = deletedMessage.key.participant || deletedMessage.key.remoteJid;
+                        const originalSender = deletedMessage.key.fromMe
+                            ? Matrix.user.id
+                            : (deletedMessage.key.participant || deletedMessage.key.remoteJid);
+                        const messageType = Object.keys(deletedMessage.message)[0] || "Unknown Type";
+                        const chatType = remoteJid.endsWith('@g.us') ? 'Group' : 'Private Chat';
+                        const originalTimestamp = deletedMessage.messageTimestamp
+                            ? moment(deletedMessage.messageTimestamp * 1000).tz("Africa/Nairobi").format('YYYY-MM-DD HH:mm:ss')
+                            : "Unknown";
+                        const deletedAt = moment().tz("Africa/Nairobi").format('YYYY-MM-DD HH:mm:ss');
+
+                        const notification =
+                            `*🟢 Buddy-XTR antidelete*\n` +
+                            `━━━━━━━━━━━━━━━━━━━━━━\n` +
+                            `*🚨 Deleted by:* @${participant.split("@")[0]}\n` +
+                            `*👤 Original sender:* @${originalSender.split("@")[0]}\n` +
+                            `*💬 Message type:* ${messageType}\n` +
+                            `*👥 Chat type:* ${chatType}\n` +
+                            `*📌 Chat ID:* ${remoteJid}\n` +
+                            `*🕰️ Sent at:* ${originalTimestamp}\n` +
+                            `*🗑️ Deleted at:* ${deletedAt}\n` +
+                            `━━━━━━━━━━━━━━━━━━━━━━`;
+
+                        const botOwnerJid = `${config.OWNER_NUMBER}@s.whatsapp.net`;
+
+                        // Only send to bot owner's PM
+                        if (deletedMessage.message.conversation) {
+                            await Matrix.sendMessage(botOwnerJid, {
+                                text: `${notification}\n\n*Recovered message:*\n${deletedMessage.message.conversation}`,
+                                mentions: [participant, originalSender],
+                            });
+                        } else if (deletedMessage.message.imageMessage) {
+                            const caption = deletedMessage.message.imageMessage.caption || '';
+                            const buffer = await downloadMedia(Matrix, { imageMessage: deletedMessage.message.imageMessage });
+                            await Matrix.sendMessage(botOwnerJid, {
+                                image: buffer,
+                                caption: `${notification}\n\n*Recovered image caption:*\n${caption}`,
+                                mentions: [participant, originalSender],
+                            });
+                        } else if (deletedMessage.message.videoMessage) {
+                            const caption = deletedMessage.message.videoMessage.caption || '';
+                            const buffer = await downloadMedia(Matrix, { videoMessage: deletedMessage.message.videoMessage });
+                            await Matrix.sendMessage(botOwnerJid, {
+                                video: buffer,
+                                caption: `${notification}\n\n*Recovered video caption:*\n${caption}`,
+                                mentions: [participant, originalSender],
+                            });
+                        } else if (deletedMessage.message.audioMessage) {
+                            const buffer = await downloadMedia(Matrix, { audioMessage: deletedMessage.message.audioMessage });
+                            await Matrix.sendMessage(botOwnerJid, {
+                                audio: buffer,
+                                ptt: true,
+                                caption: notification,
+                                mentions: [participant, originalSender],
+                            });
+                        } else if (deletedMessage.message.stickerMessage) {
+                            const buffer = await downloadMedia(Matrix, { stickerMessage: deletedMessage.message.stickerMessage });
+                            await Matrix.sendMessage(botOwnerJid, {
+                                sticker: buffer,
+                                caption: notification,
+                                mentions: [participant, originalSender],
+                            });
+                        }
+                    } catch (error) {
+                        console.error('Error handling deleted message:', error);
+                    }
+                }
+            }
+        });
+
+        // --- VIEW STATUS HANDLER (NEW) ---
+        // Automatically mark status as read/viewed
+        Matrix.ev.on('messages.upsert', async (chatUpdate) => {
+            try {
+                const messages = chatUpdate.messages;
+                if (!messages || messages.length === 0) return;
+                const mek = messages[0];
+                if (mek.key.remoteJid === 'status@broadcast') {
+                    await Matrix.readMessages([mek.key]);
+                    console.log("Automatically viewed status update.");
+                }
+            } catch (err) {
+                console.error("Error marking status as viewed:", err);
+            }
+        });
+
+    } catch (error) {
+        console.error('Critical Error:', error);
+        process.exit(1);
+    }
+}
+
+async function init() {
+    if (fs.existsSync(credsPath)) {
+        console.log("🔒 Session file found, proceeding without QR code.");
+        await start();
+    } else {
+        const sessionDownloaded = await authentification();
+        if (sessionDownloaded) {
+            console.log("🔒 Session downloaded, starting bot.");
+            await start();
+        } else {
+            console.log("No session found or downloaded, QR code will be printed for authentication.");
+            useQR = true;
+            await start();
+        }
+    }
+}
+
+init();
+
+app.get('/', (req, res) => {
+    res.send('Buddy-XTR CONNECTED SUCCESSFULLY ✅');
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});

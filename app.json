@@ -1,3 +1,4 @@
+
 {
   "name": "CARL TECH",
   "description": "Buddy-XTR by carl william.",
@@ -56,8 +57,18 @@
       "required": false,
       "value": "false"
     },
+    "AUTO_BIO": {
+      "description": "Enable bot to automatically change your bio (true/false)",
+      "required": false,
+      "value": "true"
+    },
+    "ANTI_WORD": {
+      "description": "If enabled,the bot will auto-block abusive words(true/false)",
+      "required": false,
+      "value": "false"
+    },
     "ANTI_DELETE": {
-      "description": "Enable anti-delete feature (true/false)",
+      "description": "If enabled,the bot will auto-recover deleted messages(true/false)",
       "required": false,
       "value": "true"
     },
@@ -67,9 +78,9 @@
       "value": "true"
     },
     "AUTO_STATUS_REACT": {
-      "description": "Enable bot to reply after viewing a status (true/false)",
+      "description": "Enable bot to like statuses (true/false)",
       "required": false,
-      "value": "false"
+      "value": "true"
     },
     "AUTO_BLOCK": {
       "description": "Enable bot to auto-block specific numbers (true/false)",
